@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_weight="1"
-        android:layout_width="0"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
@@ -29,27 +29,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="threePoint"
+            android:onClick="threePointA"
             android:text="+3 points" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="twoPoint"
+            android:onClick="twoPointA"
             android:text="+2 points" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="freeThrow"
+            android:onClick="freeThrowA"
             android:text="Free Throw" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_weight="1"
-        android:layout_width="0"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
@@ -72,21 +72,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="threePoint"
+            android:onClick="threePointB"
             android:text="+3 points" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="twoPoint"
+            android:onClick="twoPointB"
             android:text="+2 points" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:onClick="freeThrow"
+            android:onClick="freeThrowB"
             android:text="Free Throw" />
     </LinearLayout>
 
