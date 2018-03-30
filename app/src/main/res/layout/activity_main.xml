@@ -3,9 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -20,10 +21,18 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="Team A"
+                android:paddingTop="16dp"
+                android:text="16 UMBC Retrievers"
                 android:textColor="#616161"
-                android:textSize="14sp"
-                android:paddingTop="16dp" />
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/umbc"
+                />
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -31,47 +40,57 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:padding="4dp"
+                android:padding="0dp"
+                android:paddingTop="16dp"
                 android:text="0"
                 android:textColor="#000000"
-                android:textSize="56sp"
-                android:paddingTop="16dp"/>
+                android:textSize="56sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="25-10" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_marginTop="24dp"
                 android:onClick="threePointA"
                 android:text="+3 points"
-                android:layout_marginTop="24dp"/>
+                android:textColor="#FFEBEE" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
                 android:onClick="twoPointA"
                 android:text="+2 points"
-                android:layout_marginTop="8dp"/>
+                android:textColor="#FFEBEE" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
                 android:onClick="freeThrowA"
                 android:text="Free Throw"
-                android:layout_marginTop="8dp"/>
+                android:textColor="#FFEBEE" />
 
 
         </LinearLayout>
 
         <View
             android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@android:color/darker_gray"/>
+            android:layout_height="400dp"
+            android:background="@android:color/darker_gray" />
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -81,10 +100,17 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:padding="4dp"
-                android:text="Team B"
+                android:paddingTop="16dp"
+                android:text="1 Virginia Cavaliers"
                 android:textColor="#616161"
-                android:textSize="14sp"
-                android:paddingTop="16dp" />
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/virginia"/>
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -92,35 +118,45 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
-                android:padding="4dp"
+                android:padding="0dp"
+                android:paddingTop="16dp"
                 android:text="0"
                 android:textColor="#000000"
-                android:textSize="56sp"
-                android:paddingTop="16dp" />
+                android:textSize="56sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="31-3" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_marginTop="24dp"
                 android:onClick="threePointB"
                 android:text="+3 points"
-                android:layout_marginTop="24dp"/>
+                android:textColor="#FFEBEE" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
                 android:onClick="twoPointB"
                 android:text="+2 points"
-                android:layout_marginTop="8dp"/>
+                android:textColor="#FFEBEE" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:layout_marginTop="8dp"
                 android:onClick="freeThrowB"
                 android:text="Free Throw"
-                android:layout_marginTop="8dp"/>
+                android:textColor="#FFEBEE" />
         </LinearLayout>
 
     </LinearLayout>
@@ -130,9 +166,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
         android:onClick="resetScore"
         android:text="Reset"
-        android:layout_marginBottom="32dp"/>
+        android:textColor="#FFEBEE" />
 
 </RelativeLayout>
 
