@@ -22,8 +22,8 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:paddingTop="16dp"
-                android:text="16 UMBC Retrievers"
-                android:textColor="#616161"
+                android:text="@string/retrievers"
+                android:textColor="@color/titleColor"
                 android:textSize="14sp" />
 
             <ImageView
@@ -42,8 +42,8 @@
                 android:gravity="center_horizontal"
                 android:padding="0dp"
                 android:paddingTop="16dp"
-                android:text="0"
-                android:textColor="#000000"
+                android:text="@string/defaultScore"
+                android:textColor="@color/scoreColor"
                 android:textSize="56sp" />
 
             <TextView
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:text="25-10" />
+                android:text="@string/retRecord" />
 
             <Button
                 android:layout_width="match_parent"
@@ -59,8 +59,8 @@
                 android:layout_margin="8dp"
                 android:layout_marginTop="24dp"
                 android:onClick="threePointA"
-                android:text="+3 points"
-                android:textColor="#FFEBEE" />
+                android:text="@string/threePoint"
+                android:textColor="@color/buttonTextColor" />
 
             <Button
                 android:layout_width="match_parent"
@@ -68,8 +68,8 @@
                 android:layout_margin="8dp"
                 android:layout_marginTop="8dp"
                 android:onClick="twoPointA"
-                android:text="+2 points"
-                android:textColor="#FFEBEE" />
+                android:text="@string/twoPoint"
+                android:textColor="@color/buttonTextColor" />
 
             <Button
                 android:layout_width="match_parent"
@@ -77,8 +77,8 @@
                 android:layout_margin="8dp"
                 android:layout_marginTop="8dp"
                 android:onClick="freeThrowA"
-                android:text="Free Throw"
-                android:textColor="#FFEBEE" />
+                android:text="@string/freeThrow"
+                android:textColor="@color/buttonTextColor" />
 
 
         </LinearLayout>
@@ -101,8 +101,8 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:paddingTop="16dp"
-                android:text="1 Virginia Cavaliers"
-                android:textColor="#616161"
+                android:text="@string/cavaliers"
+                android:textColor="@color/titleColor"
                 android:textSize="14sp" />
 
             <ImageView
@@ -120,8 +120,8 @@
                 android:gravity="center_horizontal"
                 android:padding="0dp"
                 android:paddingTop="16dp"
-                android:text="0"
-                android:textColor="#000000"
+                android:text="@string/defaultScore"
+                android:textColor="@color/scoreColor"
                 android:textSize="56sp" />
 
             <TextView
@@ -129,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:text="31-3" />
+                android:text="@string/cavsRecord" />
 
             <Button
                 android:layout_width="match_parent"
@@ -137,8 +137,8 @@
                 android:layout_margin="8dp"
                 android:layout_marginTop="24dp"
                 android:onClick="threePointB"
-                android:text="+3 points"
-                android:textColor="#FFEBEE" />
+                android:text="@string/threePoint"
+                android:textColor="@color/buttonTextColor" />
 
             <Button
                 android:layout_width="match_parent"
@@ -146,8 +146,8 @@
                 android:layout_margin="8dp"
                 android:layout_marginTop="8dp"
                 android:onClick="twoPointB"
-                android:text="+2 points"
-                android:textColor="#FFEBEE" />
+                android:text="@string/twoPoint"
+                android:textColor="@color/buttonTextColor" />
 
             <Button
                 android:layout_width="match_parent"
@@ -155,8 +155,8 @@
                 android:layout_margin="8dp"
                 android:layout_marginTop="8dp"
                 android:onClick="freeThrowB"
-                android:text="Free Throw"
-                android:textColor="#FFEBEE" />
+                android:text="@string/freeThrow"
+                android:textColor="@color/buttonTextColor" />
         </LinearLayout>
 
     </LinearLayout>
@@ -168,8 +168,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:onClick="resetScore"
-        android:text="Reset"
-        android:textColor="#FFEBEE" />
+        android:text="@string/resetButton"
+        android:textColor="@color/buttonTextColor" />
 
 </RelativeLayout>
 
