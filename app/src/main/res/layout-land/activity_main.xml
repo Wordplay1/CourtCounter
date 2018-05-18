@@ -1,179 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="fill_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="550dp">
-
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center_horizontal"
-                    android:padding="4dp"
-                    android:paddingTop="16dp"
-                    android:text="@string/retrievers"
-                    android:textColor="@color/titleColor"
-                    android:textSize="14sp" />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="16dp"
-                    android:src="@drawable/umbc" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:paddingTop="16dp"
+                        android:text="@string/retrievers"
+                        android:textColor="@color/titleColor"
+                        android:textSize="14sp" />
 
-                <TextView
-                    android:id="@+id/team_a_score"
-                    android:layout_width="match_parent"
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/umbc" />
+
+                    <TextView
+                        android:id="@+id/team_a_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:padding="0dp"
+                        android:paddingTop="16dp"
+                        android:text="@string/defaultScore"
+                        android:textColor="@color/scoreColor"
+                        android:textSize="56sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="@string/retRecord" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="24dp"
+                        android:onClick="threePointA"
+                        android:text="@string/threePoint"
+                        android:textColor="@color/buttonTextColor" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="8dp"
+                        android:onClick="twoPointA"
+                        android:text="@string/twoPoint"
+                        android:textColor="@color/buttonTextColor" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="8dp"
+                        android:onClick="freeThrowA"
+                        android:text="@string/freeThrow"
+                        android:textColor="@color/buttonTextColor" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="1dp"
+                    android:layout_height="400dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center_horizontal"
-                    android:padding="0dp"
-                    android:paddingTop="16dp"
-                    android:text="@string/defaultScore"
-                    android:textColor="@color/scoreColor"
-                    android:textSize="56sp" />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center"
-                    android:text="@string/retRecord" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:padding="4dp"
+                        android:paddingTop="16dp"
+                        android:text="@string/cavaliers"
+                        android:textColor="@color/titleColor"
+                        android:textSize="14sp" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="24dp"
-                    android:onClick="threePointA"
-                    android:text="@string/threePoint"
-                    android:textColor="@color/buttonTextColor" />
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/virginia" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:onClick="twoPointA"
-                    android:text="@string/twoPoint"
-                    android:textColor="@color/buttonTextColor" />
+                    <TextView
+                        android:id="@+id/team_b_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:padding="0dp"
+                        android:paddingTop="16dp"
+                        android:text="@string/defaultScore"
+                        android:textColor="@color/scoreColor"
+                        android:textSize="56sp" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:onClick="freeThrowA"
-                    android:text="@string/freeThrow"
-                    android:textColor="@color/buttonTextColor" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:text="@string/cavsRecord" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="24dp"
+                        android:onClick="threePointB"
+                        android:text="@string/threePoint"
+                        android:textColor="@color/buttonTextColor" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="8dp"
+                        android:onClick="twoPointB"
+                        android:text="@string/twoPoint"
+                        android:textColor="@color/buttonTextColor" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginTop="8dp"
+                        android:onClick="freeThrowB"
+                        android:text="@string/freeThrow"
+                        android:textColor="@color/buttonTextColor" />
+                </LinearLayout>
 
 
             </LinearLayout>
 
-            <View
-                android:id="@+id/line1"
-                android:layout_width="1dp"
-                android:layout_height="400dp"
-                android:background="@android:color/darker_gray" />
-
-            <LinearLayout
-                android:layout_width="0dp"
+            <Button
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center_horizontal"
-                    android:padding="4dp"
-                    android:paddingTop="16dp"
-                    android:text="@string/cavaliers"
-                    android:textColor="@color/titleColor"
-                    android:textSize="14sp" />
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="16dp"
-                    android:src="@drawable/virginia" />
-
-                <TextView
-                    android:id="@+id/team_b_score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center_horizontal"
-                    android:padding="0dp"
-                    android:paddingTop="16dp"
-                    android:text="@string/defaultScore"
-                    android:textColor="@color/scoreColor"
-                    android:textSize="56sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-medium"
-                    android:gravity="center"
-                    android:text="@string/cavsRecord" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="24dp"
-                    android:onClick="threePointB"
-                    android:text="@string/threePoint"
-                    android:textColor="@color/buttonTextColor" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:onClick="twoPointB"
-                    android:text="@string/twoPoint"
-                    android:textColor="@color/buttonTextColor" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginTop="8dp"
-                    android:onClick="freeThrowB"
-                    android:text="@string/freeThrow"
-                    android:textColor="@color/buttonTextColor" />
-            </LinearLayout>
-
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:onClick="resetScore"
+                android:text="@string/resetButton"
+                android:textColor="@color/buttonTextColor" />
 
         </LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:onClick="resetScore"
-            android:text="@string/resetButton"
-            android:textColor="@color/buttonTextColor" />
 
 
     </RelativeLayout>
